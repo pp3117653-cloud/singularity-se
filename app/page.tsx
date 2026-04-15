@@ -1,63 +1,40 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function Page() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen bg-white text-gray-900 p-4 font-sans flex flex-col items-center">
+      <header className="w-full max-w-md flex justify-between items-center py-4 border-b">
+        <h1 className="text-xl font-bold tracking-tight">Singularity Earn</h1>
+        <div className="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">0 Coins</div>
+      </header>
+      
+      <main className="w-full max-w-md mt-8 flex flex-col gap-4">
+        <div className="w-full bg-blue-50 text-blue-800 text-xs font-bold px-4 py-2 rounded-md mb-2 text-center uppercase tracking-wide">
+          Your Ad Banner Here - 100% User Focus
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        
+        <p className="text-sm text-gray-500 mb-2">Select an educational book to start earning.</p>
+
+        <div className="border rounded-lg p-4 flex justify-between items-center shadow-sm">
+          <div>
+            <h2 className="font-semibold text-lg">UPSC History & Polity</h2>
+            <p className="text-xs text-gray-500 mt-1">Reward: 10 Coins / Page</p>
+          </div>
+          <button className="bg-black text-white px-4 py-2 rounded-md text-sm font-medium">Read</button>
+        </div>
+
+        <div className="border rounded-lg p-4 flex justify-between items-center shadow-sm">
+          <div>
+            <h2 className="font-semibold text-lg">NCERT Physics Class 12</h2>
+            <p className="text-xs text-gray-500 mt-1">Reward: 10 Coins / Page</p>
+          </div>
+          <button className="bg-black text-white px-4 py-2 rounded-md text-sm font-medium">Read</button>
+        </div>
+
+        <div className="border rounded-lg p-4 flex justify-between items-center shadow-sm">
+          <div>
+            <h2 className="font-semibold text-lg">Business Mastery Vol 1.</h2>
+            <p className="text-xs text-gray-500 mt-1">Reward: 10 Coins / Page</p>
+          </div>
+          <button className="bg-black text-white px-4 py-2 rounded-md text-sm font-medium">Read</button>
         </div>
       </main>
     </div>
